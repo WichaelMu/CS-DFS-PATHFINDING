@@ -41,18 +41,6 @@ namespace CS_DFS_PATHFINDING
 
         static void Main(string[] args)
         {
-            #region People
-            //Other other = new Other(12, 12);
-            //Other _other = new Other(6, 6);
-
-            //Console.WriteLine(_other.Inverse());
-
-            //Console.WriteLine(new Position("Home", 2, 2, 2));
-            //Console.WriteLine(new Position("Home", 2, 2, 2));
-
-            //Person p1 = new Person("Mico", "shit", 19, 170, new Position("Home", 0, 0, 0));
-            #endregion
-
             if (!ValidMap())
             {
                 Console.WriteLine("There is no end.");
