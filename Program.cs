@@ -7,9 +7,9 @@ namespace CS_DFS_PATHFINDING
     {
         /// <summary> The map to transverse through. </summary>
         static char[,] map ={
-            {' ', '*', ' ', ' ', ' ', '*', ' ', '*', ' ', '*', ' ', ' ', ' ', ' '},
-            {' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', '*', '*', ' '},
-            {' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', ' ', ' ', '*', ' ', ' '},
+            {' ', '*', ' ', ' ', ' ', '*', ' ', '*', ' ', '*', ' ', ' ', ' ', ' '},     //  ' ' Free space;
+            {' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', '*', '*', ' '},     //  '*' Impassable space.
+            {' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', ' ', ' ', '*', ' ', ' '},     //  'e' Target Destination.
             {' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', '*'},
             {' ', '*', ' ', '*', ' ', '*', ' ', ' ', ' ', '*', ' ', '*', ' ', ' '},
             {' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', '*', ' ', '*', '*', ' '},
@@ -31,6 +31,7 @@ namespace CS_DFS_PATHFINDING
         };
         /// <summary> The direction from the previous cell. </summary>
         static char[] path = new char[map.GetLength(0) * map.GetLength(1)];
+        /// <summary>Index of path[].</summary>
         static int p = 0;
         /// <summary> The number of visited cells. </summary>
         static int visited = 0;
